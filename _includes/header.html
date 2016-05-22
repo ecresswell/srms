@@ -6,22 +6,22 @@
         <div id="links">
             <ul>
                 <li class="selected">
-                    <a href="/">Home</a>
+                    <a href="{{ '/' | prepend: site.github.url }}">Home</a>
                 </li>
                 <li>
-                    <a href="/what-we-offer">What We Offer</a>
+                    <a href="{{ '/what-we-offer' | prepend: site.github.url }}">What We Offer</a>
                 </li>
                 <li>
-                    <a href="/where">Where</a>
+                    <a href="{{ '/where' | prepend: site.github.url }}">Where</a>
                 </li>
                 <li>
-                    <a href="/prices">Prices</a>
+                    <a href="{{ '/prices' | prepend: site.github.url }}">Prices</a>
                 </li>
                 <li>
-                    <a href="/tutors">Tutors</a>
+                    <a href="{{ '/tutors' | prepend: site.github.url }}">Tutors</a>
                 </li>
                 <li class="last">
-                    <a href="/contact-us">Contact Us</a>
+                    <a href="{{ '/contact-us' | prepend: site.github.url }}">Contact Us</a>
                 </li>
             </ul>
         </div>
