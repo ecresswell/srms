@@ -1,12 +1,13 @@
             <div id="news">
-                <p class="more"><a href="/news" class="float-right">more</a></p>
-                <h1><a href="/news">NEWS</a></h1>
-                <p><a href="/news/id:27">Trumpet For Sale</a></p>
+                <p class="more"><a href="{{ '/news' | prepend: site.github.url }}" class="float-right">more</a></p>
+                <h1><a href="{{ '/news' | prepend: site.github.url }}">NEWS</a></h1>
+{% assign sorted_pages = site.news | sort: "date" | reverse %}
+{% for page in sorted_pages limit: 5%}
+                <p><a href="{{ page.url | prepend: site.github.url }}" rel="bookmark" title="Permanent link" class="crpw-title">{{ page.title }}</a></p>
                 <br />
-                <p><a href="/news/id:11">Bad Weather and Emergency Closure Arrangements </a></p>
-                <br />
+{% endfor %}
             </div>
             <div id="dates">
-                <p class="more"><a href="/dates" class="float-right">more</a></p>
-                <h1><a href="/dates">DATES</a></h1>
+                <p class="more"><a href="{{ '/dates' | prepend: site.github.url }}" class="float-right">more</a></p>
+                <h1><a href="{{ '/dates' | prepend: site.github.url }}">DATES</a></h1>
             </div>
