@@ -3,8 +3,8 @@ layout: page
 title: Contact Us
 ---
 
-<p>&nbsp;</p>
-<h1>Please contact:</h1>
+To contact us, please use:
+
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <h1><img src="{{ '/files/srms/Telephone.jpg' | prepend: site.github.url }}" border="0" width="69" height="68" /></h1>

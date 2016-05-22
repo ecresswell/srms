@@ -1,6 +1,6 @@
 ---
 layout: page
-title: What we Offer
+title: What We Offer
 ---
 
 <h4 style="text-align: left;">SRMS  believes that children and adults of  all ages and abilities can benefit  from music&nbsp;activities, not only to  develop a life long interest in  many different types of music and to  acquire skills in singing, dancing  and playing an instrument but also to  build up their self-esteem and  confidence in their own abilities.</h4>
