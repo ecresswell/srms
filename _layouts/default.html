@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include head.html %}
+</head>
+<body>
+<div id="wrapper">
+{% include header.html %}
+    <div id="centre-wrapper">
+        <div id="right-bar">
+{% include sidebar.html %}
+        </div>
+        <div id="content">
+            {{ content }}
+        </div>
+        <hr />
+    </div>
+    <div id="footer">
+{% include footer.html %}
+    </div>
+</div>
+</body>
+</html>
