@@ -1,37 +1,17 @@
 ---
-layout: default
+layout: page
 title : News
-permalink: "/news/"
 ---
-<h3 class="result-heading">News</h3>
 
 {% assign sorted_pages = site.news | sort: "date" | reverse %}
 {% for page in sorted_pages %}
-<article class="post listing">
-    <section class="title">
-        <h2 class="post-title"><a href={{ page.url | prepend: site.github.url }}>{{ page.title }}</a></h2>
-    </section>
-    <section class="meta">
-        <ul>
-            <li class="date">{{ page.date | date: '%B %d, %Y' }}</li>
-        </ul>
-        <div class="clear"></div>
-    </section>
-    <div class="clear"></div>
-    <section class="entry">
+<div class="news-item">
+    <div class="news-item-created">{{ page.date | date: '%B %d, %Y' }}</div>
+    <div class="news-item-title">
+        <a href={{ page.url | prepend: site.github.url }}>{{ page.title }}</a>
+    </div>
+    <div class="news-item-content">
         <p>{{ page.content | strip_html | truncatewords: 50 }}</p>
-        <span class="more"><a href={{ page.url | prepend: site.github.url }} title="Read More">Read More</a></span>
-    </section>
-</article>
-{% endfor %}
-
-<!--
-<div class="pagination">
-    <span class="current">1</span>
-    <a href={{ '/category/news/page/2/' | prepend: site.github.url }} class="inactive">2</a>
-    <a href={{ '/category/news/page/3/' | prepend: site.github.url }} class="inactive">3</a>
-    <a href={{ '/category/news/page/2/' | prepend: site.github.url }}>&gt;&gt;</a>
-    <a href={{ '/category/news/page/6/' | prepend: site.github.url }}>Last &gt;</a>
-    <span class="numbers">Page 1 of 6</span>
+    </div>
 </div>
--->
+{% endfor %}
